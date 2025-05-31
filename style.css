@@ -1,0 +1,256 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(135deg, #0f0f0f, #1c1c1c, #0f0f0f);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #f1f1f1;
+  scroll-behavior: smooth;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* NAVBAR */
+header {
+  background: #1a1a1a;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h1 {
+  font-size: 1.8rem;
+  color: #00bcd4;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #f1f1f1;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #00bcd4;
+}
+
+.btn {
+  background: #00bcd4;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #0097a7;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(to right, #141e30, #243b55);
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* FEATURES */
+.features {
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  color: #00bcd4;
+  text-shadow: 0 0 15px rgba(0, 188, 212, 0.5);
+}
+
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  max-width: 800px;
+  align-items: center;
+}
+
+.large-card {
+  position: relative;
+  width: 100%;
+  background: rgba(30, 30, 30, 0.95);
+  padding: 2.5rem;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  box-shadow: 0 0 25px rgba(0, 188, 212, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  overflow: hidden;
+  text-align: center;
+}
+
+.large-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 40px rgba(0, 188, 212, 0.5);
+  border: 2px solid #00bcd4;
+}
+
+.large-card h3 {
+  color: #00bcd4;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.large-card p {
+  opacity: 0;
+  max-height: 0;
+  transition: opacity 0.5s ease, max-height 0.5s ease;
+  overflow: hidden;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.large-card:hover p {
+  opacity: 1;
+  max-height: 200px;
+}
+
+/* COMMANDS & LEGAL */
+.commands, .legal {
+  padding: 3rem 2rem;
+  background: #181818;
+}
+
+.center {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.small-text {
+  font-size: 0.95rem;
+  color: #bbb;
+}
+
+/* FOOTER */
+footer {
+  background: #111;
+  padding: 2rem 1rem;
+  text-align: center;
+  color: #aaa;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-nav a {
+  color: #00bcd4;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+  color: #0097a7;
+}
+
+.footer-nav .btn {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.copyright {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.support-floating-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #00bcd4;
+  color: #fff;
+  padding: 0.8rem 1.4rem;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 0 20px rgba(0, 188, 212, 0.4);
+  transition: background 0.3s ease, transform 0.2s ease;
+  z-index: 1001;
+}
+
+.support-floating-btn:hover {
+  background: #0097a7;
+  transform: scale(1.05);
+}
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 70px; /* Au-dessus du bouton support */
+  right: 20px;
+  background-color: #00bcd4;
+  color: white;
+  padding: 0.8rem 1rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(0,188,212,0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 1002;
+  user-select: none;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #0097a7;
+  transform: scale(1.1);
+}
+
+/* Affiche le bouton quand on scroll */
+#scrollToTopBtn.show {
+  opacity: 1;
+  visibility: visible;
+}
