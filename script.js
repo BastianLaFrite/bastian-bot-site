@@ -1,15 +1,19 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target); // Stop observing once visible
-      }
-    });
-  }, {
-    threshold: 0.2
-  });
+const scrollToTopBtn = document.getElementById('scrollToTopBtn');
 
-  const cards = document.querySelectorAll('[data-animate]');
-  cards.forEach(card => observer.observe(card));
+// Affiche ou cache le bouton selon la position du scroll
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    scrollToTopBtn.classList.add('show');
+  } else {
+    scrollToTopBtn.classList.remove('show');
+  }
+});
+
+// Au clic, remonte doucement en haut
+scrollToTopBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
 });

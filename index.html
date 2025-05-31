@@ -2,120 +2,93 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bastian Bot</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
+<a href="https://discord.gg/support" class="support-floating-btn" target="_blank">Serveur de support</a>
+<a href="#" id="scrollToTopBtn" title="Remonter en haut">⬆️</a>
 <body>
+
+  <!-- NAVBAR -->
   <header>
-    <div class="navbar">
-      <div class="logo">🤖 Bastian Bot</div>
+    <nav class="navbar">
+      <h1>Bastian Bot</h1>
       <ul class="nav-links">
         <li><a href="#features">Fonctionnalités</a></li>
         <li><a href="#commands">Commandes</a></li>
-        <li><a href="privacy.html">Confidentialité</a></li>
-        <li><a href="#terms">Conditions</a></li>
-        <li><a href="#" class="btn">+ Ajouter le Bot</a></li>
+        <li><a href="#legal">Légal</a></li>
+        <li><a class="btn" href="https://discord.com/oauth2/authorize?client_id=TON_ID&scope=bot">Inviter le bot</a></li>
       </ul>
-    </div>
+    </nav>
   </header>
 
+  <!-- HERO -->
   <section class="hero">
     <div class="hero-content">
       <h1>Bienvenue sur Bastian Bot</h1>
-      <p>Le compagnon de gestion ultime pour votre serveur Discord</p>
-      <a href="#features" class="btn">Voir les fonctionnalités</a>
+      <p>Un bot tout-en-un pour une gestion intelligente de votre serveur Discord.</p>
+      <a class="btn" href="#features">Découvrir</a>
     </div>
   </section>
 
-  <section id="features" class="features">
+  <!-- FEATURES -->
+  <section class="features" id="features">
     <h2 class="section-title">Fonctionnalités</h2>
-    <div class="grid">
-      <div class="card" data-animate>
+    <div class="feature-list">
+      <div class="large-card">
         <h3>🛠️ Modération</h3>
-        <p>Gestion des sanctions (kick, ban, mute), purge de messages, journalisation des actions, et plus encore.</p>
+        <p>Outils puissants pour gérer votre serveur avec efficacité (kick, ban, mute, etc.).</p>
       </div>
-      <div class="card" data-animate>
+      <div class="large-card">
         <h3>🚫 Anti-Raids</h3>
-        <p>Détection de raids, protection contre les spams de bots, blocages automatisés et alertes de sécurité.</p>
+        <p>Protection automatique contre les attaques de bots ou les spams massifs.</p>
       </div>
-      <div class="card" data-animate>
+      <div class="large-card">
         <h3>🧩 Captcha</h3>
-        <p>Vérification obligatoire des nouveaux membres pour garantir la sécurité de votre communauté.</p>
+        <p>Ajoute une vérification humaine à l'entrée pour renforcer la sécurité.</p>
       </div>
-      <div class="card" data-animate>
+      <div class="large-card">
         <h3>📊 Système de niveau</h3>
-        <p>Les membres gagnent de l'XP à chaque message et débloquent des rôles personnalisés automatiquement.</p>
+        <p>Faites évoluer vos membres avec un système d'XP et de rôles automatiques.</p>
       </div>
-      <div class="card" data-animate>
+      <div class="large-card">
         <h3>📵 Anti-Spam</h3>
-        <p>Protection automatique contre le spam, flood, pubs, emojis excessifs ou mentions abusives.</p>
+        <p>Empêche les abus de messages, pubs, emojis ou mentions excessives.</p>
       </div>
-      <div class="card" data-animate>
+      <div class="large-card">
         <h3>🎭 Réactions-Rôles</h3>
-        <p>Permet aux membres de choisir leurs rôles via un message à réactions, entièrement personnalisable.</p>
+        <p>Les membres choisissent leurs rôles en réagissant à un message.</p>
       </div>
     </div>
   </section>
 
-  <section id="commands" class="commands">
+  <!-- COMMANDS -->
+  <section class="commands" id="commands">
     <h2 class="section-title">Commandes</h2>
-    <p class="center">Voici une liste de commandes principales du bot avec leurs descriptions :</p>
-    <div class="grid">
-      <div class="card" data-animate>
-        <h3>/kick &lt;@membre&gt;</h3>
-        <p>Exclut un membre du serveur. Usage : <code>!kick @Pseudo</code></p>
-      </div>
-      <div class="card" data-animate>
-        <h3>/ban &lt;@membre&gt;</h3>
-        <p>Bannit un membre du serveur. Usage : <code>!ban @Pseudo</code></p>
-      </div>
-      <div class="card" data-animate>
-        <h3>/mute &lt;@membre&gt; &lt;durée&gt;</h3>
-        <p>Mute un membre pour une durée spécifiée. Usage : <code>!mute @Pseudo 10m</code></p>
-      </div>
-      <div class="card" data-animate>
-        <h3>commande_ici</h3>
-        <p>Ajoute la description de ta commande ici en suivant le même modèle.</p>
-      </div>
+    <p class="center">Une documentation complète est disponible bientôt !</p>
+  </section>
+
+  <!-- LEGAL -->
+  <section class="legal" id="legal">
+    <h2 class="section-title">Mentions légales</h2>
+    <div class="small-text">
+      <p>Bastian Bot ne collecte aucune donnée personnelle hors de Discord. Toutes les informations restent internes et sécurisées.</p>
+      <p>Consultez nos conditions d'utilisation et politique de confidentialité bientôt disponibles.</p>
     </div>
   </section>
 
-  <section id="privacy" class="legal">
-  <h2>Politique de confidentialité</h2>
-  <p><strong>Dernière mise à jour :</strong> 30 mai 2025</p>
-  <p>Bastian Bot respecte la confidentialité de ses utilisateurs. Voici un résumé des engagements :</p>
-  <ul>
-    <li><strong>Données collectées :</strong> IDs Discord, IDs de serveurs/messages, commandes et configurations.</li>
-    <li><strong>Utilisation :</strong> Fonctionnement du bot uniquement (modération, niveaux, anti-raid, etc.).</li>
-    <li><strong>Partage :</strong> Aucune donnée partagée ou vendue. Accès réservé au propriétaire du bot.</li>
-    <li><strong>Sécurité :</strong> Mesures techniques mises en place, mais aucun système n’est infaillible.</li>
-    <li><strong>Conservation :</strong> Données conservées tant qu'elles sont nécessaires ou supprimées sur demande.</li>
-    <li><strong>Vos droits :</strong> Suppression possible via une demande sur le support Discord.</li>
-  </ul>
-  <p>Des modifications peuvent être apportées à cette politique à tout moment. Pour en savoir plus, contactez-nous sur le <a href="https://discord.gg/tonserveur" class="text-blue-600 underline">serveur de support</a>.</p>
-</section>
-
-  <section id="terms" class="legal">
-    <h2>Conditions d'utilisation</h2>
-    <ul class="list-disc list-inside text-gray-700 space-y-2">
-      <li>En utilisant Bastian Bot, vous acceptez ces conditions.</li>
-      <li>Le bot ne doit pas être utilisé sur des serveurs illégaux, haineux ou abusifs.</li>
-      <li>Les données collectées (identifiants Discord, configurations, commandes) sont strictement nécessaires au bon fonctionnement.</li>
-      <li>Nous ne garantissons ni disponibilité continue ni absence d’erreurs.</li>
-      <li>Tout abus, exploitation de bugs ou tentative de nuire peut entraîner un bannissement du bot.</li>
-      <li>Nous nous réservons le droit de modifier ces conditions à tout moment.</li>
-    </ul>
-    <p class="mt-4 text-gray-700">
-      Pour toute question ou problème, contactez-nous sur le <a href="https://discord.gg/tonserveur" class="text-blue-600 underline">serveur de support</a>.
-    </p>
-  </section>
-
+  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 Bastian Bot. Tous droits réservés.</p>
+    <div class="footer-nav">
+      </div>
+      <a href="#features">Fonctionnalités</a>
+      </div>
+      <a href="#commands">Commandes</a>
+      </div>
+      <a href="#legal">Légal</a>
+    <p class="copyright">© 2025 Bastian Bot — Tous droits réservés</p>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
